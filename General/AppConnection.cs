@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UsersManagement.General
+{
+    public class AppConnection
+    {
+        public static string GetConnectionString()
+        {
+            return ConfigurationManager.ConnectionStrings["sql1"].ConnectionString;
+            //return ConfigurationManager.ConnectionStrings["SQLRemote"].ConnectionString;
+        }
+    }
+}
