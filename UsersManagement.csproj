@@ -83,6 +83,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADO\DataAccess.cs" />
+    <Compile Include="ADO\SqlParametro.cs" />
+    <Compile Include="ADO\Response.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Forms\ChangePasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,7 +167,6 @@
     <EmbeddedResource Include="Forms\ViewUsersForm.resx">
       <DependentUpon>ViewUsersForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
